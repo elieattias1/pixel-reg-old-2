@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 
 ## Training
-Training on grayscale images is the default setting in this codebase
+Training on grayscale images is the default setting in this codebase. To train and regularize on color images add the argument `rgb=True`.
 
 ### Training without regularization
 To train a ResNet18 to classify CIFAR-10 without regularization, execute:
