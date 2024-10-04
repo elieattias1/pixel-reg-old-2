@@ -15,7 +15,7 @@ pip install -r requirements.txt
 Training on grayscale images is the default setting in this codebase
 
 ### Training without regularization
-To train a ResNet18 to classify grayscale CIFAR-10 without regularization, execute:
+To train a ResNet18 to classify CIFAR-10 without regularization, execute:
 
 ```
 python train.py --task=CIFAR10 --archi=ResNet18
@@ -23,7 +23,7 @@ python train.py --task=CIFAR10 --archi=ResNet18
 
 ### Train with Regularization
 
-To train a ResNet18 to classify grayscale CIFAR-10 regularized on grayscale images from CIFAR-10 using $S^{Th}$ as targets, execute:
+To train a ResNet18 to classify CIFAR-10 regularized on images from CIFAR-10 using $S^{Th}$ as targets, execute:
 
 ```
 python train.py --task=CIFAR10 --archi=ResNet18 --reg_data=CIFAR10 --reg_alpha=10 --reg_thresh=0.8
